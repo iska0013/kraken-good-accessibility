@@ -30,6 +30,15 @@ header {
   font-style: normal;
   font-weight: normal;
   padding: 1rem;
+  background-color: #1e7c74;
+}
+
+div.chapter {
+  padding-left: 0;
+}
+
+.display-contents {
+  display: contents;
 }
 
 header strong,
@@ -54,6 +63,7 @@ article header {
   background-image: none;
   border-radius: 0 0 6px 6px;
   color: #fff;
+  padding: 0 1rem;
 }
 
 h1 {
@@ -61,6 +71,7 @@ h1 {
   color: #fff;
   font-weight: normal;
   font-size: 1.125rem;
+  grid-area: 1;
 }
 
 h2 {
@@ -68,6 +79,11 @@ h2 {
   color: #fff;
   font-weight: normal;
   font-size: 1.75rem;
+  grid-area: 2;
+}
+
+header nav {
+  grid-area: 4;
 }
 
 nav ul {
@@ -86,7 +102,7 @@ nav a {
   border: 0;
   border-radius: 6px;
   color: #fff;
-  padding: 0.5rem;
+  padding: .5rem;
   width: 2.5rem;
   height: 2.5rem;
 }
@@ -114,6 +130,27 @@ nav i {
   height: 100%;
 }
 
+main {
+  margin: 0 1rem;
+}
+
+span.green {
+  font-style: italic;
+  color: #259f95;
+}
+
+p {
+  margin: 0;
+}
+
+main p:first-of-type {
+  margin-top: 1rem;
+}
+
+span.indent {
+  margin-left: 1.1rem;
+}
+
 article p {
   margin: 0;
   text-indent: 1.3em;
@@ -121,11 +158,6 @@ article p {
 
 article div :first-child {
   text-indent: 0;
-}
-
-article div :first-child::first-line {
-  color: #1e7c74;
-  font-style: italic;
 }
 
 figure {
@@ -157,4 +189,5 @@ footer {
   padding: 1rem;
   background-image: url("../images/anchors.svg");
   color: #fff;
+  background-color: #1e7c74;
 }
